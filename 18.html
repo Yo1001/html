@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 1000px;
+            width: 100%;
+            background-color: rgb(134, 108, 108);
+        }
+
+        .one {
+            height: 600px;
+            width: 15px;
+            background-color: sienna;
+            border-radius: 90%;
+            position: relative;
+            top: 10px;
+            left: 650px;
+        }
+
+        .two {
+            height: 50px;
+            width: 185px;
+            background-color: orange;
+            position: relative;
+            top: -587px;
+            left: 660px;
+            animation-name: org;
+            animation-duration: 1s;
+        }
+
+        @keyframes org {
+            0% {
+                width: 0px;
+            }
+
+            /* 30%{
+                width: 200px;
+            } */
+            50% {
+                width: 200px;
+            }
+
+            75% {
+                width: 200px;
+            }
+
+            100% {
+                width: 0px;
+            }
+        }
+
+        .img {
+            height: 60px;
+            width: 60px;
+            background-image: url(images/Ashoka_Chakra.svg.png);
+            background-size: cover;
+            margin-left: 60px;
+            animation: yg, infinite;
+            animation-duration: 2s;
+
+        }
+
+        @keyframes yg {
+            0% {
+                opacity: 1;
+            }
+
+            35% {
+                opacity: 1;
+                transform: rotate(0deg);
+            }
+
+            65% {
+                opacity: 1;
+            }
+
+            70% {
+                opacity: 0;
+                transform: rotate(360deg);
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .thr {
+            height: 55px;
+            width: 185px;
+            background-color: white;
+            position: relative;
+            top: -587px;
+            left: 660px;
+            animation-name: wt;
+            animation-duration: 1s;
+        }
+
+        @keyframes wt {
+            0% {
+                width: 0;
+            }
+
+            50% {
+                width: 250px;
+            }
+
+            75% {
+                width: 250px;
+            }
+
+            100% {
+                width: 0px;
+            }
+        }
+
+        .four {
+            height: 50px;
+            width: 185px;
+            background-color: green;
+            position: relative;
+            top: -587px;
+            left: 660px;
+            animation-name: gr;
+            animation-duration: 1s;
+        }
+
+        @keyframes gr {
+            0% {
+                width: 0px;
+            }
+
+            50% {
+                width: 300px;
+            }
+
+            75% {
+                width: 300px;
+            }
+
+            100% {
+                width: 0px;
+            }
+        }
+
+        .five {
+            height: 100px;
+            width: 500px;
+         
+            position: absolute;
+            top: 150px;
+            left: 40px;
+            border-right: 2px groove white;
+            border-bottom: 2px groove green;
+            font-size: 55px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+        }
+
+        @keyframes yogs {
+            0% {
+                width: 0px;
+            }
+
+            100% {
+                width: 100px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="thr">
+            <div class="img"></div>
+        </div>
+        <div class="four"></div>
+        <div class="five"> Independence Day</div>
+    </div>
+</body>
+
+</html>

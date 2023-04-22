@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color:darkmagenta !important;
+        }
+        a:link{
+            color: aqua;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:hover{
+            color: green;
+            text-decoration: none;
+        }
+        a:active{
+            color: brown;
+        }
+        input[type="text"]:focus{
+            outline: none;
+            box-shadow:  0 0 20px black;
+            border-bottom: 2px solid red;
+        }
+
+        input[type="number"]:in-range{
+            border: 2px solid green;
+        }
+        input[type="number"]:out-of-range{
+            border: 2px solid red
+        }
+        p::first-letter{
+            font-size: 20px;
+            color: red;
+        }
+        /* p::first-line{
+            font-size: 20px;
+            color: aqua;
+        } */
+        p::selection{
+            background-color: black;
+            color: white;
+        }
+        li::marker{
+            color: blue ;
+        }
+        div::after{
+            content: "a a a a a a a";
+        }
+        div::before{
+            content: "x x x x xx x";
+        }
+    </style>
+</head>
+<body> 
+    <input type="text" name="" id="">
+    <a href="#">Home</a>
+    <input type="number" name="" id="" min="0" max="5">
+    <p style="color: cadetblue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. In necessitatibus at expedita sint, maxime dicta ipsa quaerat sunt similique facere quis repellat quam illo culpa dignissimos iusto consequatur deleniti corrupti?</p>
+    <ul>
+        <li>Yogi</li>
+        <li>Yogi</li>
+        <li>Yogi</li>
+    </ul>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officia delectus harum itaque quia quas enim dicta cumque, ab ducimus consequatur ut laboriosam porro consequuntur quasi laudantium accusantium assumenda nulla?
+    </div>
+</body>
+</html>
